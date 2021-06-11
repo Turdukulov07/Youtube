@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fl_video_details"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:elevation="2dp"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_view_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:id="@+id/tv_playlist_name_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:fontFamily="@font/fjalla_one"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fl_video_details"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/playlist_name" />
+
+    <TextView
+        android:id="@+id/tv_video_series_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_12sp"
+        app:layout_constraintStart_toStartOf="@id/tv_playlist_name_details"
+        app:layout_constraintTop_toBottomOf="@id/tv_playlist_name_details"
+        tools:text="15 Видео" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

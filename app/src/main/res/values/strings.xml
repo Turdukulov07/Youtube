@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kotlinLesson4</string>
+    <string name="try_again">Try again</string>
+    <string name="playlist_name">Playlist Name</string>
+    <string name="video">Видео</string>
+    <string name="todo">TODO</string>
+    <string name="playlist">Playlist</string>
+    <string name="ignore">ignore</string>
+    <string name="back">Back</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+</resources>
